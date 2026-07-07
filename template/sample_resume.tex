@@ -1,0 +1,181 @@
+\documentclass[10pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=0.65in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[none]{hyphenat}
+\usepackage{parskip}
+
+% ---------- ATS Friendly Formatting ----------
+\sloppy
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=2pt}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing{\section}{0pt}{8pt}{5pt}
+
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2 \\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill #2
+}
+
+% ---------- Document ----------
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+    {\Huge \textbf{Moinuddin Mahmood}} \\
+    \vspace{3pt}
+    \textbf{Senior Frontend Engineer | React | TypeScript | Next.js | Micro-Frontend Architecture} \\
+    \vspace{5pt}
+    Kuala Lumpur, Malaysia \quad | \quad
+    \href{mailto:moin.uddin314@gmail.com}{moin.uddin314@gmail.com} \quad | \quad
+    +60-1137931606 \\
+    \href{https://github.com/moynuddin}{github.com/Moinuddin}
+    \quad | \quad
+    \href{https://linkedin.com/in/moyn-uddin}{linkedin.com/Moinuddin Mahmood}
+\end{center}
+
+% ---------- Summary ----------
+\section*{Professional Summary}
+
+Senior Frontend Engineer with 6+ years of experience building scalable, secure, and high-performance web applications across banking, fintech, e-commerce, and enterprise platforms. Strong expertise in React 18, TypeScript, Next.js, micro-frontends, design systems, testing, accessibility, and frontend performance optimization. Delivered customer-facing banking platforms for UOB Singapore, Maybank, and Qatar Digital Bank, including Fixed Deposit, Structured Deposit, Overseas Fund Transfer, credit/debit card workflows, authentication, and transaction journeys. Experienced in Node.js/Express.js API integration and AI-enabled applications using LangChain.js, LangGraph, and vector databases.
+
+% ---------- Skills ----------
+\section*{Technical Skills}
+
+\textbf{Frontend:} React 18, Next.js, TypeScript, JavaScript ES6+, HTML5, CSS3, SCSS \\
+
+\textbf{Architecture:} Micro-frontends, Webpack Module Federation, Design Systems, Component Libraries, Code Splitting, Lazy Loading, Performance Optimization, Core Web Vitals \\
+
+\textbf{State and Styling:} Redux Toolkit, Zustand, Context API, TailwindCSS, Material UI, Bootstrap, ShadCN UI \\
+
+\textbf{Banking and Fintech:} Fixed Deposit, Structured Deposit, Overseas Fund Transfer, Credit Card Workflows, Debit Card Workflows, Secure Transaction Flows, MFA, JWT, OAuth2, REST API Integration \\
+
+\textbf{Testing:} Jest, React Testing Library, Playwright, Unit Testing, E2E Testing, Regression Testing \\
+
+\textbf{Accessibility:} WCAG, Semantic HTML, Responsive Design, Cross-Browser Compatibility \\
+
+\textbf{Backend Exposure:} Node.js, Express.js, NestJS, REST API Design, PostgreSQL, MongoDB \\
+
+\textbf{AI / LLM:} LangChain.js, LangGraph, OpenAI API, Gemini API, Qdrant, Pinecone, Vercel AI SDK \\
+
+\textbf{DevOps and Tooling:} Git, GitHub Actions, Jenkins, Webpack, Vite, Docker, NPM, Yarn, ESLint, VS Code
+
+% ---------- Experience ----------
+\section*{Professional Experience}
+
+\resumeSubheading
+{Senior Frontend Engineer}
+{Jul 2025 -- Present}
+{Aleph Labs | Client: UOB Singapore}
+{Kuala Lumpur, Malaysia}
+
+\begin{itemize}
+    \item Led migration of legacy JSP banking modules for deposit, transfer, and card journeys to React 18 and Material UI, improving maintainability and reducing page load time by 25\%. through code splitting, lazy loading, and bundle optimization.
+    \item Built and enhanced customer-facing digital banking modules including Fixed Deposit, Structured Deposit, Overseas Fund Transfer, and credit/debit card servicing workflows.
+    \item Developed secure, validation-heavy banking forms and transaction journeys using React, TypeScript, and Material UI, supporting review screens, confirmation flows, error handling, and customer action flows.
+    \item Implemented micro-frontend patterns using Webpack Module Federation to support modular ownership and independent delivery across banking frontend modules.
+    \item Collaborated with backend, QA, product, and compliance teams to deliver audit-sensitive banking features involving transaction validation, secure API integration, and release readiness.
+\end{itemize}
+
+\vspace{4pt}
+
+\resumeSubheading
+{Senior Frontend Engineer}
+{Sep 2024 -- Jun 2025}
+{HR Tag | Client: Maybank}
+{Kuala Lumpur, Malaysia}
+
+\begin{itemize}
+    \item Modernized 15+ legacy React class components into Hooks-based architecture, reducing unnecessary re-renders and improving Time-to-Interactive across key banking screens.
+    \item Worked on customer-facing banking modules involving deposits, fund transfers, credit/debit card servicing, authentication flows, and responsive UI enhancements.
+    \item Refactored 2,000+ lines of legacy frontend code, reducing technical debt and improving long-term maintainability of core banking UI modules.
+    \item Strengthened secure transaction flows by implementing Multi-Factor Authentication across high-risk banking actions and transaction entry points.
+    \item Delivered banking features in close collaboration with backend, QA, and product teams under strict security, compliance, and audit requirements.
+\end{itemize}
+
+\vspace{4pt}
+
+\resumeSubheading
+{Frontend Developer}
+{Aug 2021 -- Aug 2024}
+{Cognizant Technology Solutions}
+{India / Remote}
+
+\vspace{3pt}
+
+\textbf{Client: Chewy | E-commerce Platform}
+
+\begin{itemize}
+    \item Improved release stability by implementing Playwright E2E and Jest unit test suites for critical e-commerce workflows, reducing recurring regression issues across major releases.
+    \item Led and mentored a 3-member frontend engineering team, improving sprint velocity by 15\% through task delegation, code review, and engineering support.
+    \item Improved application response time by 25\% through performance profiling, memoization, rendering optimization, and frontend bundle optimization.
+    \item Developed scalable React UI modules supporting high-traffic e-commerce systems and reusable customer-facing components.
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{Client: Qatar Digital Bank | Banking Platform}
+
+\begin{itemize}
+    \item Reduced feature development time by 30\% by designing reusable React component libraries shared across engineering teams.
+    \item Built secure loan lending portal screens using React, REST API integration, robust error handling, and client-side input validation.
+    \item Delivered responsive, cross-device banking UI aligned with WCAG accessibility standards and secure customer journey requirements.
+    \item Collaborated with backend and QA teams to deliver reliable frontend modules for banking, lending, and customer onboarding workflows.
+\end{itemize}
+
+\vspace{4pt}
+
+\resumeSubheading
+{Software Engineer}
+{Oct 2019 -- Jul 2021}
+{C-DAC | Centre for Development of Advanced Computing}
+{India}
+
+\begin{itemize}
+    \item Built Angular-based UI modules for national fare collection infrastructure, improving system performance by 20\%.
+    \item Developed reusable Angular components and responsive interfaces for large-scale transportation and fare collection workflows.
+    \item Delivered government-scale frontend software under compliance, reliability, and cross-functional engineering constraints.
+\end{itemize}
+
+% ---------- Projects ----------
+\section*{AI and Side Projects}
+
+\projectHeading{MailPilot -- Agentic Email Pipeline}\href{https://github.com/moynuddin/MailPilot}{github.com/MailPilot}
+
+\begin{itemize}
+    \item Built an autonomous email triage and response agent using LangGraph and Node.js with parallel execution nodes for classification, drafting, and approval routing.
+    \item Implemented stateful multi-step agent workflows with human-in-the-loop checkpoints to ensure output quality before sending.
+    \item Built a React/Next.js dashboard to review AI-generated classifications, drafted replies, approval checkpoints, and processing status.
+\end{itemize}
+
+% ---------- Education ----------
+\section*{Education}
+
+\textbf{Bachelor of Technology (B.Tech) -- Computer Science} \hfill 2014 -- 2018 \\
+Dr. APJ Abdul Kalam Technical University, Lucknow, India
+
+% ---------- Certifications ----------
+\section*{Certifications and Achievements}
+
+\begin{itemize}
+    \item LangChain.js for Developers -- LinkedIn Learning, 2025.
+    \item Solved 350+ algorithmic problems on LeetCode, demonstrating strong data structures and problem-solving fundamentals.
+    \item Top 10 Finalist -- Cognizant Internal Hackathon.
+\end{itemize}
+
+\end{document}
+```
