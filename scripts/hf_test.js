@@ -1,6 +1,5 @@
-const fs = require("fs");
-
 async function main() {
+  const fs = await import("node:fs");
   const envRaw = fs.readFileSync(".env", "utf8");
   const m = envRaw.match(/HF_API_KEY=(.+)/);
   if (!m) {
