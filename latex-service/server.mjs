@@ -81,7 +81,10 @@ async function compileLatex(latex) {
 }
 
 const server = createServer(async (req, res) => {
-  if (req.method === "GET" && req.url === "/health") {
+  if (
+    req.method === "GET" &&
+    (req.url === "/" || req.url === "/health" || req.url === "/health/")
+  ) {
     sendJson(res, 200, { ok: true });
     return;
   }
